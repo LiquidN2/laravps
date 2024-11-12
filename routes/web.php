@@ -4,4 +4,4 @@ use Illuminate\Support\Facades\Route;
 
 Route::view('/', 'pages.dashboard')->name('dashboard');
 
-Route::resource('customers', CustomerController::class);
+Route::view('/customers/create', 'pages.customers.create')->name('customers.create');
